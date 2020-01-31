@@ -31,7 +31,7 @@ export const ANDROID = Object.freeze({
 });
 
 export const IOS = Object.freeze({
-  BLUETOOTH_PERIPHERAL: 'ios.permission.BLUETOOTH_PERIPHERAL' as const,
+  // BLUETOOTH_PERIPHERAL: 'ios.permission.BLUETOOTH_PERIPHERAL' as const,
   CALENDARS: 'ios.permission.CALENDARS' as const,
   CAMERA: 'ios.permission.CAMERA' as const,
   CONTACTS: 'ios.permission.CONTACTS' as const,

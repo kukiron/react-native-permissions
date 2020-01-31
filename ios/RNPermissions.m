@@ -1,9 +1,9 @@
 #import "RNPermissions.h"
 #import <React/RCTLog.h>
 
-#if __has_include("RNPermissionHandlerBluetoothPeripheral.h")
-#import "RNPermissionHandlerBluetoothPeripheral.h"
-#endif
+// #if __has_include("RNPermissionHandlerBluetoothPeripheral.h")
+// #import "RNPermissionHandlerBluetoothPeripheral.h"
+// #endif
 #if __has_include("RNPermissionHandlerCalendars.h")
 #import "RNPermissionHandlerCalendars.h"
 #endif
@@ -55,9 +55,9 @@ static NSString* SETTING_KEY = @"@RNPermissions:Requested";
 @implementation RCTConvert(RNPermission)
 
 RCT_ENUM_CONVERTER(RNPermission, (@{
-#if __has_include("RNPermissionHandlerBluetoothPeripheral.h")
-  [RNPermissionHandlerBluetoothPeripheral handlerUniqueId]: @(RNPermissionBluetoothPeripheral),
-#endif
+// #if __has_include("RNPermissionHandlerBluetoothPeripheral.h")
+//   [RNPermissionHandlerBluetoothPeripheral handlerUniqueId]: @(RNPermissionBluetoothPeripheral),
+// #endif
 #if __has_include("RNPermissionHandlerCalendars.h")
   [RNPermissionHandlerCalendars handlerUniqueId]: @(RNPermissionCalendars),
 #endif
@@ -126,11 +126,11 @@ RCT_EXPORT_MODULE();
   id<RNPermissionHandler> handler = nil;
 
   switch (permission) {
-#if __has_include("RNPermissionHandlerBluetoothPeripheral.h")
-    case RNPermissionBluetoothPeripheral:
-      handler = [RNPermissionHandlerBluetoothPeripheral new];
-      break;
-#endif
+// #if __has_include("RNPermissionHandlerBluetoothPeripheral.h")
+//     case RNPermissionBluetoothPeripheral:
+//       handler = [RNPermissionHandlerBluetoothPeripheral new];
+//       break;
+// #endif
 #if __has_include("RNPermissionHandlerCalendars.h")
     case RNPermissionCalendars:
       handler = [RNPermissionHandlerCalendars new];
