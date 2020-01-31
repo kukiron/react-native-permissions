@@ -39,10 +39,10 @@
 	</dict>
 	<key>NSAppleMusicUsageDescription</key>
 	<string>Let me use your media library</string>
-	<key>NSBluetoothPeripheralUsageDescription</key>
+	<!-- <key>NSBluetoothPeripheralUsageDescription</key>
 	<string>Let me use bluetooth</string>
 	<key>NSBluetoothAlwaysUsageDescription</key>
-	<string>Let me use bluetooth</string>
+	<string>Let me use bluetooth</string> -->
 	<key>NSCalendarsUsageDescription</key>
 	<string>Let me use your calendars</string>
 	<key>NSCameraUsageDescription</key>
@@ -73,7 +73,7 @@
 	</array>
 	<key>UIBackgroundModes</key>
 	<array>
-		<string>bluetooth-peripheral</string>
+		<!-- <string>bluetooth-peripheral</string> -->
 		<string>location</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
